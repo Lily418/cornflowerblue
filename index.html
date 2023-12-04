@@ -1,0 +1,108 @@
+<html>
+  <head>
+    <title>cult of cornflowerblue</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0);
+        }
+
+        to {
+          transform: rotate(12deg);
+        }
+      }
+
+      #addtoday {
+        animation-duration: 1s;
+        animation-name: spin;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        transform-origin: center;
+        width: fit-content;
+        animation-delay: 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        min-width: 100vw;
+        min-height: 100vh;
+        background-color: cornflowerblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+      "
+    >
+      <span
+        id="hex"
+        style="
+          color: white;
+          font-family: sans-serif;
+          padding: 24px;
+          font-size: 32px;
+          align-self: flex-start;
+          background-color: cornflowerblue;
+          font-style: italic;
+          transform: rotate(-12deg);
+        "
+      >
+        #ff5733
+      </span>
+      <span
+        id="addtoday"
+        style="
+          color: white;
+          font-family: sans-serif;
+          padding: 24px;
+          font-size: 64px;
+          margin: 0;
+        "
+      >
+        Add Cornflower Blue to your project today!
+      </span>
+
+      <div
+        style="
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          padding: 6px;
+        "
+      >
+        <span
+          id="cult"
+          style="
+            color: white;
+            font-family: sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            align-self: flex-end;
+          "
+        >
+          by cult of cornflower
+        </span>
+        <span
+          style="
+            color: white;
+            font-family: sans-serif;
+            padding: 24px;
+            font-size: 32px;
+            align-self: flex-end;
+            margin: 0;
+            transform: rotate(-4deg);
+          "
+        >
+          rgb( 255, 87, 51 )
+        </span>
+      </div>
+    </div>
+  </body>
+</html>
